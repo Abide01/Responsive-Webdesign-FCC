@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>John Doe - IT Developer</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+   <!-- Welcome Section -->
+<section id="welcome-section" class="welcome-section">
+    <div class="welcome-text">
+        <p>Hello! I'm an IT Web Developer, </p>
+          
+<p> my name is </p>
+        <h1>Abid Junuzovic</h1>
+    </div>
+</section>
+
+   <!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <h2 class="projects-section-header">My Projects</h2>
+
+    <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project project-tile">
+            <a href="https://github.com/Abide01/Abids-1st-Java/tree/main" target="_blank">
+                <img class="project-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTihAFwErey1ClKf_Pf5d-QBNJH00mRxd-JPw&usqp=CAU" alt="Project 1">
+            </a>
+            <p class="project-title">Fitness Tracking App</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project project-tile">
+            <a href="https://github.com/yourusername/project2" target="_blank">
+                <img class="project-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoSM6wZuMrpkdZ7HowLQWm7DSYR3a6Zv2OPA&usqp=CAU" alt="Project 2">
+            </a>
+            <p class="project-title">Make a penguin in HTML and CSS</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project project-tile">
+            <a href="https://dumptrailerservices-jax.com/" target="_blank">
+                <img class="project-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX-B_eVeOO9Y_l7_WQ5zjElkckYhXeyIDugg&usqp=CAU" alt="Project 3">
+            </a>
+            <p class="project-title">Personilized Website for company</p>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project project-tile">
+            <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-product-landing-page-project/build-a-product-landing-page" target="_blank">
+                <img class="project-image" src="https://readwrite.com/wp-content/uploads/2023/03/High-Converting-Landing-Page-825x500.jpeg" alt="Project 4">
+            </a>
+            <p class="project-title">Product Landing page</p>
+        </div>
+    </div>
+
+    <a href="https://github.com/yourusername" class="btn btn-show-all" target="_blank">Show all <i class="fas fa-chevron-right"></i></a>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+            <h2>Contact Me</h2>
+            <p>Let's work together on a new project.</p>
+        </div>
+        <div class="contact-links">
+            <a href="Abidjunuzovic@yahoo.com" class="btn contact-details"><i class="fas fa-envelope"></i> Email</a>
+            <a id="profile-link" href="https://github.com/Abide01" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/abid-junuzovic-302750273/" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+
+        <p>&copy; 2023 Abid Junuzovic</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+CSS
+
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; 
+    padding: 10px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem; 
+    padding: 10px 20px; 
+}
+
+
+#navbar li {
+    font-size: 1.4rem; 
+}
+
+/* Welcome Section Styles */
+#welcome-section {
+    height: 100vh;
+    background-color: #0074E4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-text {
+    text-align: center;
+}
+
+.welcome-text p {
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+}
+
+.welcome-text h1 {
+    font-size: 3.5rem; 
+    font-weight: 700; 
+}
+
+/* Projects Section Styles */
+#projects {
+    padding: 20px;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+    margin: 0 auto;
+    max-width: 1000px; 
+}
+
+.project-tile {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto; 
+}
+
+.project-title {
+    font-size: 1.5rem; 
+    margin-top: 10px; 
+}
+
+/* Footer Section Styles */
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background: #0074E4; 
+    border-top: 4px solid #333; 
+}
+
+
+
+
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: row;
+        text-align: center;
+    }
+}
